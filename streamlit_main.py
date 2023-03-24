@@ -20,7 +20,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('background\sober_blue.jpg')   
+add_bg_from_local('.\\background\sober_blue.jpg')   
 
 
 
