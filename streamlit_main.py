@@ -99,7 +99,7 @@ if st.checkbox('Show raw data'):
 
 
 
-st.header(f"Messages sent from from {hour_to_filter}:00 to {hour_to_filter+1}:00 showing the {top_n} best")
+st.header(f"On Messages sent from from {hour_to_filter}:00 to {hour_to_filter+1}:00 showing the {top_n} best")
 
 
 st.subheader(f'Triggered messages with SUPERCELL risk values from -1 to 7 (CHILD_GROOMING top, RELATIONSHIP_SEXUAL_CONTENT bottom) ')
@@ -119,7 +119,7 @@ for i in range(len(columns)):
 #st.write(worst_trigger_msg_df[['filtered_message','CHILD_GROOMING']].values)
 
 
-st.subheader(f'Most problematic conversation: our token charge value from 0=not at all to ????= definitely groomer')
+st.subheader(f'Most suspicious conversations: our groomer risk score value (0-32)')
 
 def str_list_to_paragraph(str_list):
     paragraph = ''
