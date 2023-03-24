@@ -5,6 +5,8 @@ import numpy as np
 st.set_page_config(layout="wide")
 st.title('Grooming detection in Clash Royale chats')
 
+
+
 import base64
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
@@ -20,7 +22,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('.\\background\sober_blue.jpg')   
+add_bg_from_local('background/sober_blue.jpg')   
 
 
 
