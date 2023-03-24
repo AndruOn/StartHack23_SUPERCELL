@@ -30,7 +30,7 @@ add_bg_from_local('background/sober_blue.jpg')
 @st.cache_data
 def load_data_messages():
     #Index(['account_id', 'alliance_id', 'timestamp', 'raw_message', 'filtered_message', 'CHILD_GROOMING', 'hour_bucket'],
-    messages_df = pd.read_csv('.\csv_frontEnd\\messages_df.csv',low_memory=False)
+    messages_df = pd.read_csv('csv_frontEnd/messages_df.csv',low_memory=False)
     
     return messages_df
 
@@ -38,7 +38,7 @@ def load_data_messages():
 #SORTED DATA
 def load_data_convs():
     #Index(['Unnamed: 0', 'account_id', 'alliance_id', 'scores', 'conv_str_list'], dtype='object')
-    alliances_account_scores_df = pd.read_csv('.\csv_frontEnd\\alliance_account_score_conv.csv',low_memory=False)
+    alliances_account_scores_df = pd.read_csv('csv_frontEnd/alliance_account_score_conv.csv',low_memory=False)
     #SORTED DATA
     return alliances_account_scores_df
 
